@@ -69,12 +69,12 @@ export default function Home() {
               }`}
             >
               {message.role === "assistant" && (
-                <div className="w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center">
-                  <Bot className="w-5 h-5 text-purple-600 dark:text-purple-400" />
+                <div className="w-6 h-6 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center">
+                  <Bot className="w-4 h-4 text-purple-600 dark:text-purple-400" />
                 </div>
               )}
               <div
-                className={`max-w-[80%] p-3 rounded-lg font-bengali ${
+                className={`max-w-[80%] py-1 px-3 rounded text-sm font-bengali ${
                   message.role === "user"
                     ? "bg-purple-600 text-white"
                     : "bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200"
@@ -83,8 +83,8 @@ export default function Home() {
                 {message.content}
               </div>
               {message.role === "user" && (
-                <div className="w-8 h-8 rounded-full bg-purple-600 flex items-center justify-center">
-                  <User className="w-5 h-5 text-white" />
+                <div className="w-6 h-6 rounded-full bg-purple-600 flex items-center justify-center">
+                  <User className="w-4 h-4 text-white" />
                 </div>
               )}
             </div>
